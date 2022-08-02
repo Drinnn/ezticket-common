@@ -1,5 +1,5 @@
 import CustomError from "./custom-error";
-import { ErrorReturnObject } from "./error-return-object-interface";
+import ErrorReturnObject from "./error-return-object-interface";
 
 export default class RouteNotFoundError extends CustomError {
   statusCode = 404;

@@ -1,4 +1,4 @@
-import { ErrorReturnObject } from "./error-return-object-interface";
+import ErrorReturnObject from "./error-return-object-interface";
 
 export default abstract class CustomError extends Error {
   public abstract statusCode: number;
