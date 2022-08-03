@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "del ./build/*",
     "build": "yarn clean && tsc",
-    "publish": "npm publish"
+    "publish": "yarn build && npm publish"
   },
   "license": "MIT",
   "devDependencies": {
