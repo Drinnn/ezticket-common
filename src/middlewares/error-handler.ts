@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import CustomError from "../errors/custom-error";
+import { CustomError } from "../errors/custom-error";
 
-const errorHandlerMiddleware = (
+export const errorHandlerMiddleware = (
   err: Error,
   req: Request,
   res: Response,
@@ -15,5 +15,3 @@ const errorHandlerMiddleware = (
     .status(500)
     .json({ errors: [{ message: "Internal server error" }] });
 };
-
-export default errorHandlerMiddleware;

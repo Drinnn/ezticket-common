@@ -1,4 +1,4 @@
-export default interface ErrorReturnObject {
+export interface ErrorReturnObject {
   message: string;
   field?: string;
 }

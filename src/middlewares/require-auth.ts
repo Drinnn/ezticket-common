@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import NotAuthorizedError from "../errors/not-authorized-error";
+import { NotAuthorizedError } from "../errors/not-authorized-error";
 
-const requireAuthMiddleware = (
+export const requireAuthMiddleware = (
   req: Request,
   res: Response,
   next: NextFunction
@@ -12,5 +12,3 @@ const requireAuthMiddleware = (
 
   next();
 };
-
-export default requireAuthMiddleware;
